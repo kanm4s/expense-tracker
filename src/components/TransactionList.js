@@ -7,7 +7,7 @@ export default function TransactionList() {
     return (
         <ul className="list-group">
             {transactions.map((ele) => (
-                <Transaction />
+                <Transaction key={ele.id} transaction={ele} />
             ))}
         </ul>
     );
